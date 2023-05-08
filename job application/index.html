@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application(Web)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="apply_box">
+        <h1 class="apply_box__h1">
+          Job Application <span class="small__title">(Web)</span>
+        </h1>
+
+        <form action="https://httpbin.org/get" method="get">
+          <div class="form__container">
+            <div class="form__control">
+              <label for="firstName">First Name</label>
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                required
+                autofocus
+              />
+            </div>
+            <div class="form__control">
+              <label for="lastName">Last Name</label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                required
+                autofocus
+              />
+            </div>
+            <div class="form__control">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required autofocus />
+            </div>
+            <div class="form__control">
+              <label for="job_role">Job Role</label>
+              <select name="job_role" id="job_role">
+                <option value="">Select Job Role</option>
+                <option value="frontend">Frontend Developer</option>
+                <option value="backend">Backend Developer</option>
+                <option value="full_stack">Full Stack Developer</option>
+                <option value="ui_ux">UI UX Designer</option>
+              </select>
+            </div>
+            <div class="form__control">
+              <label for="address">Address</label>
+              <textarea
+                name="address"
+                id="address"
+                cols="50"
+                rows="4"
+              ></textarea>
+            </div>
+            <div class="form__control">
+              <label for="city">City</label>
+              <input type="text" name="city" id="city" required />
+            </div>
+            <div class="form__control">
+              <label for="pincode">Pincode</label>
+              <input type="number" name="pincode" id="pincode" />
+            </div>
+            <div class="form__control">
+              <label for="date">Date</label>
+              <input value="2001-10-07" type="date" name="date" id="date" />
+            </div>
+            <div class="form__control">
+              <label for="upload">Upload Your CV</label>
+              <input class="upload" type="file" name="upload" id="upload" />
+            </div>
+          </div>
+          <div class="button__container">
+            <button class="button-25" type="submit"> Apply Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
