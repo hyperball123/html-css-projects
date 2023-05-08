@@ -229,9 +229,6 @@ footer {
   .features {
     flex-direction: column;
   }
-  .feature {
-    /* flex-direction: column; */
-  }
   .grid {
     padding: 10px;
   }
