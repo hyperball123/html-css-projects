@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root {
+  --purple500: #281154;
+  --purple300: #270082;
+  --purple600: #1b0058;
+  --red600: #dc0000;
+  --body: #f9f6ff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin: 50px;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+  padding: 20px 0;
+}
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  transition: 0.2s ease-in-out;
+  opacity: 0.8;
+}
+
+header {
+  background-color: var(--purple300);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+nav ul li {
+  border-bottom: 2px solid transparent;
+  transition: 0.2s ease-in;
+}
+nav ul li:hover {
+  border-bottom: 2px solid white;
+}
+
+/* hero section */
+
+.hero-section {
+  background-image: url(images/hero_image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 100vh;
+  display: grid;
+  color: white;
+  place-items: center;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-weight: 700;
+  font-size: 72px;
+}
+
+.hero-section h3 {
+  font-weight: 400;
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.hero-section p {
+  font-weight: 400;
+  font-size: 18px;
+}
+.music-section {
+  background-color: var(--purple500);
+  padding-bottom: 6em;
+}
+.music-section .container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-section button {
+  align-self: center;
+  color: #f9f6ff;
+  background-color: var(--red600);
+  cursor: pointer;
+}
+
+.music-section .ipad-phone-img {
+  position: relative;
+  margin-top: -400px;
+  /* background-repeat: no-repeat; */
+  top: 400px;
+}
+
+/* about section */
+
+.about-music {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  margin-top: 300px;
+  color: black;
+}
+
+.secondary-btn {
+  background-color: var(--purple300);
+  color: #f9f6ff;
+}
+
+/* video section */
+
+.video-section {
+  background-image: url(images/video.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  display: grid;
+  place-items: center;
+  color: white;
+  text-align: center;
+}
+
+.video-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: -200px;
+}
+
+
+/* Gift card section */
+.gift-section {
+  padding-top: 5em;
+
+}
+.gift-section .container {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  justify-content: space-between;
+  /* align-items: center; */
+  line-height: 29px;
+}
+
+.gift-section-content {
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.reddem-btn {
+  align-self: flex-start;
+  width: 100px;
+}
+
+.footer-upper {
+  background-color: var(--purple600);
+  padding: 20px;
+
+}
+
+.footer-upper .container {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+} 
+
+.footer-upper h4 {
+  padding-bottom: 10px ;
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+}
+
+.footer-lower {
+  background-color: var(--purple300);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
